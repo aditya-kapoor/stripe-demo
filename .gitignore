@@ -1,0 +1,12 @@
+.DS_Store
+*.rbc
+*.sassc
+*~
+*.DS_Store
+.sass-cache
+.project
+/config/*.yml
+/.bundle
+*.log
+/tmp/*
+/public/system/*

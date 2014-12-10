@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stripe</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%= javascript_include_tag 'https://js.stripe.com/v1/', 'application' %>
+  <%= csrf_meta_tags %>
+  <%= tag :meta, name: 'stripe-public-key', content: Rails.application.secrets.stripe['public_key'] %>
+</head>
+<body>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+</body>
+</html>

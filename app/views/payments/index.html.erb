@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <thead>
+    <th>Email</th>
+    <th>Amount</th>
+  </thead>
+  <% @payments.each do |payment| %>
+    <tr>
+      <td><%= payment.email %></td>
+      <td><%= payment.amount %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Make New Payment', new_payment_path, class: 'btn btn-primary' %>
