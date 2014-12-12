@@ -7,6 +7,8 @@ gem 'coffee-rails'
 gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'stripe'
+gem 'capistrano'
+gem 'capistrano-bundler'
 
 group :development, :test do
   gem 'byebug'

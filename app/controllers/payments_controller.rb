@@ -1,4 +1,6 @@
 class PaymentsController < ApplicationController
+  force_ssl if: :ssl_configured?
+
   def index
     @payments = Payment.all
   end
@@ -19,5 +21,9 @@ class PaymentsController < ApplicationController
   private
     def payment_params
       params.require(:payment).permit!
+    end
+
+    def ssl_configured?
+      !Rails.env.development?
     end
 end
