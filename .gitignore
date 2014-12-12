@@ -10,3 +10,4 @@
 *.log
 /tmp/*
 /public/system/*
+.capistrano

@@ -8,7 +8,8 @@ gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'stripe'
 gem 'capistrano'
-gem 'capistrano-bundler'
+gem 'capistrano-rails'
+gem 'unicorn'
 
 group :development, :test do
   gem 'byebug'
